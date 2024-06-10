@@ -1,0 +1,78 @@
+{
+    "model": {
+        "type": "openai",
+        "input_size": [32, 32],
+        "num_res_blocks": 2,
+        "num_heads": 8,
+        "attention_resolutions": [ 4, 2, 1],
+        "channel_mult":  [ 1,2,4,4 ],
+        "input_channels": 64,
+        "model_channels": 320,
+        "num_head_channels": -1,
+        "use_spatial_transformer": true,
+        "context_dim": 768,
+        "use_scale_shift_norm": false,
+        "transformer_depth": 1,
+        "resblock_updown": false,
+        "legacy": false,
+        "has_variance": false,
+        "unet_cond_dim": 0,
+        "loss_config": "karras",
+        "loss_weighting": "soft-min-snr",
+        "dropout_rate": 0.05,
+        "augment_wrapper": false,
+        "augment_prob": 0.12,
+        "sigma_data": 0.5,
+        "sigma_min": 1e-2,
+        "sigma_max": 80,
+        "sigma_sample_density": {
+            "type": "cosine-interpolated"
+        }
+    },
+    
+    "dataset": {
+        "texture_size": 64,
+        "patch_size": 32,
+        "desc_size": 64,
+        "device": "cuda",
+        "path_to_data": "./dataset/pointclouds",
+        "scalp_path": "./data/final_scalp.obj",
+        "uv_path": "./data/symmetry_scalp_uvcoords.pth",
+        "enc_ckpt": "./pretrained_models/strand_prior/strand_ckpt.pth",
+        "feats_path": "./dataset/features"
+    },
+    
+    "upsampler": {
+        "mode": "mixed",
+        "use_noise": true,
+        "noise_mean": 0.15,
+        "noise_std": 0.05,
+        "path_to_coords": "./data/coords_for_each_origin_512.pt",
+        "path_to_faces": "./data/faces_for_each_origin_512.pt",
+        "path_to_meshgrid": "./data/meshgrid_mask_512.pt",
+        "path_to_basis": "./data/R_inv_512.pt",
+        "device": "cuda"
+    },
+    
+    "optimizer": {
+        "type": "adamw",
+        "lr": 1e-4,
+        "betas": [0.95, 0.999],
+        "eps": 1e-6,
+        "weight_decay": 1e-3
+    },
+    
+    "lr_sched": {
+        "type": "inverse",
+        "inv_gamma": 20000.0,
+        "power": 1.0,
+        "warmup": 0.99
+    },
+    
+    "ema_sched": {
+        "type": "inverse",
+        "power": 0.6667,
+        "max_value": 0.9999
+    }
+    
+}

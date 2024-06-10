@@ -1,0 +1,12 @@
+[submodule "submodules/LAVIS"]
+	path = submodules/LAVIS
+	url = https://github.com/salesforce/LAVIS.git
+[submodule "submodules/k-diffusion"]
+	path = submodules/k-diffusion
+	url = https://github.com/crowsonkb/k-diffusion.git
+[submodule "submodules/NeuralHaircut"]
+	path = submodules/NeuralHaircut
+	url = https://github.com/SamsungLabs/NeuralHaircut.git
+[submodule "submodules/LLaVA"]
+	path = submodules/LLaVA
+	url = https://github.com/haotian-liu/LLaVA

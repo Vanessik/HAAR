@@ -77,7 +77,7 @@ The full repository structure is organized as follows:
 |-- train.py
 |-- infer.py
 
-|-- requirements.txt
+|-- environment.yml
 ```
 
 

@@ -177,11 +177,12 @@ This work is based on the great projects:
 Cite as below if you find this repository is helpful to your project:
 
 ```
-@article{sklyarova2023haar,
-title={HAAR: Text-Conditioned Generative Model of 3D Strand-based Human Hairstyles},
-author={Sklyarova, Vanessa and Zakharov, Egor and Hilliges, Otmar and Black, Michael J and Thies, Justus},
-journal={ArXiv},
-month={Dec}, 
-year={2023} 
+@InProceedings{Sklyarova_2024_CVPR,
+    author    = {Sklyarova, Vanessa and Zakharov, Egor and Hilliges, Otmar and Black, Michael J. and Thies, Justus},
+    title     = {Text-Conditioned Generative Model of 3D Strand-based Human Hairstyles},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {4703-4712}
 }
 ```

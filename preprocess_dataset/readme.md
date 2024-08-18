@@ -31,7 +31,7 @@ To collect the dataset use the following steps:
 ### Step 1. Put aligned hairstyles with our ./data/head_prior.obj model into ./dataset/pointclouds/*.ply.
 
 
-Note, in ./dataset/pointclouds we provide an example hairstyle aligned with the head. For more data, consider [USC HairSalon dataset](https://drive.google.com/file/d/118ZwW_pDw9IvnoTndHMk4wLZcPb0cw4v/view), [CT2Hair](https://github.com/facebookresearch/CT2Hair).
+Note, in ./dataset/pointclouds we provide an example hairstyle aligned with the head. For more data, consider [USC HairSalon dataset](https://huliwenkidkid.github.io/liwenhu.github.io/), [CT2Hair](https://github.com/facebookresearch/CT2Hair).
 
 
 

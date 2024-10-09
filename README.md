@@ -167,6 +167,7 @@ This work is based on the great projects:
 ## Related projects
 
 - [NeuralHaircut](https://github.com/SamsungLabs/NeuralHaircut) reconstructs strand-based hairstyle using multi-view data or monocular video;
+- [GaussianHaircut](https://eth-ait.github.io/GaussianHaircut) improves reconstructions from monocular video using gaussian splatting;
 
 
 
